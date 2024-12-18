@@ -1,0 +1,254 @@
+/* Enhanced styling for the entire site */
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    margin: 0;
+    padding: 0 0 100px; /* Adjust bottom padding to match footer height */
+    background: #f4f4f4; /* Updated background color for a modern look */
+    color: #333; /* Retained text color for readability */
+    line-height: 1.6; /* Improved line spacing */
+}
+
+header {
+    background: linear-gradient(to right, #0061a8, #00bcd4); /* Gradient from deep blue to teal */
+    color: #ffffff; /* Light text for contrast */
+    padding: 20px 10%;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.3); /* Slightly darker shadow for depth */
+}
+.header-content {
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Ensures content is centered */
+    width: 100%; /* Ensures the container takes full width */
+}
+
+.logo {
+    position: absolute; /* Positions the logo absolutely within the header */
+    left: 20px; /* Adds space from the left edge */
+    top: 10px; /* Adds space from the top edge */
+    height: 120px; /* Adjust size as needed */
+}
+
+
+header h1 {
+    margin: 0; /* Removes default margin */
+}
+
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #ffffff;
+    background-color: #5c87b2; /* Soft blue for a gentle contrast */
+    padding: 10px 15px;
+    border-radius: 5px; /* Rounded corners for links */
+    transition: background-color 0.3s; /* Smooth transition for hover effect */
+    text-decoration: none; /* Removes underline from links */
+}
+
+
+nav ul li a:hover {
+    background-color: #3a5f7d; /* Darker shade on hover */
+}
+
+footer {
+    text-align: center;
+    padding: 20px 0;
+    background: linear-gradient(to right, #0061a8, #00bcd4); /* Matching gradient with header */
+    color: white;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    box-shadow: 0 -2px 5px rgba(0,0,0,0.2); /* Shadow for lifting effect */
+}
+
+.gallery h2 {
+    padding: 20px 0; /* Adds padding above and below the heading */
+    text-align: center; /* Centers the heading text */
+}
+
+.gallery p {
+    padding: 10px 20px; /* Adds padding around the paragraph for better spacing */
+    text-align: justify; /* Justifies the text for a cleaner look */
+    line-height: 1.8; /* Increases line height for better readability */
+}
+
+.gallery-preview, .gallery-container {
+    display: flex;
+    flex-wrap: wrap; /* Allows items to wrap as needed */
+    justify-content: space-around; /* Distributes space around items */
+    padding: 40px; /* Increased padding for better spacing */
+    margin: 20px auto; /* Centered margin for better focus on content */
+    background-color: #f4f4f4; 
+}
+
+.gallery-preview img, .gallery-container img {
+    width: 250px;
+    height: 250px;
+    margin: 10px;
+    border: 5px solid #5c87b2; /* Border color matching navigation */
+    transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.gallery-preview img:hover, .gallery-container img:hover {
+    transform: scale(1.1);
+    border-color: #3a5f7d; /* Harmonized hover effect */
+}
+
+.contact-form button {
+    padding: 10px 20px;
+    background-color: #32a852; /* Retained green but added padding */
+    color: white;
+    border: none;
+    border-radius: 5px; /* Rounded corners for buttons */
+    cursor: pointer;
+    transition: background-color 0.3s; /* Smooth transition for hover */
+}
+
+.contact-form button:hover {
+    background-color: #278440; /* Darker green on hover */
+}
+
+.contact-form input, .contact-form textarea {
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px; /* Rounded corners for input fields */
+}
+.contact-form {
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 20px;
+    background: #ffffff;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    border-radius: 8px;
+}
+
+.contact-form h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.contact-form input, .contact-form textarea {
+    width: 100%; /* Full width */
+    padding: 12px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box; /* Makes sure padding doesn't affect width */
+}
+
+.contact-form input:focus, .contact-form textarea:focus {
+    border-color: #4A90E2;
+    box-shadow: 0 0 8px rgba(74, 144, 226, 0.5);
+}
+
+.contact-form button {
+    width: 100%;
+    padding: 14px 20px;
+    background-color: #5c87b2;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.contact-form button:hover {
+    background-color: #3a5f7d;
+}
+.about-artist, .latest-projects, .testimonials {
+    padding: 20px;
+    margin: 20px 0;
+    background-color: #f4f4f4;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.about-artist h2, .latest-projects h2, .testimonials h2 {
+    color: #333;
+}
+
+.about-artist p, .latest-projects p, .testimonials p {
+    color: #666;
+    font-size: 16px;
+}
+.artwork {
+    text-align: center; /* Centers the text and image */
+    margin: 10px; /* Adds space around each artwork */
+}
+
+.artist-name {
+    color: #666; /* Sets the text color */
+    font-size: 14px; /* Sets the font size */
+    margin-top: 5px; /* Adds a little space between the image and the text */
+}
+/* Enhanced padding for Featured Works section */
+.featured {
+    padding: 40px 20px; /* Increased padding for better spacing */
+    margin: 20px 0;
+    background-color: #f4f4f4;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+/* Enhanced padding for What My Website Offers section */
+.website-offers {
+    padding: 40px 20px; /* Increased padding for better spacing */
+    margin: 20px 0;
+    background-color: #f4f4f4;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+.artist-profile {
+    margin: 20px;
+    padding: 20px;
+    background-color: #f4f4f4;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+.artist-profile img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%; /* Circular images */
+    margin-bottom: 20px;
+}
+
+.artist-profile h2 {
+    color: #333;
+}
+
+.artist-profile p {
+    color: #666;
+    font-size: 16px;
+}
+.bio {
+    padding: 40px 20px; /* Increased padding for better spacing */
+    margin: 20px auto; /* Centered margin for better focus on content */
+    background-color: #ffffff; /* Light background for better readability */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    max-width: 800px; /* Restricts the width for better text readability */
+}
+
+.bio h2 {
+    color: #333;
+    margin-bottom: 20px; /* Adds space below the heading */
+}
+
+.bio p {
+    color: #666;
+    font-size: 16px;
+    line-height: 1.8; /* Increased line height for better readability */
+}
